@@ -4,7 +4,7 @@ import config
 genai.configure(api_key=config.GEMINI_API_KEY)
 
 # اگر این مدل در دسترس نبود، اسم مدل رایگان فعلی را از Google AI Studio بردار
-MODEL_NAME = "gemini-1.5-flash"
+MODEL_NAME = "gemini-2.5-flash-lite"
 
 SYSTEM_PROMPT_TEMPLATE = """تو دستیار شخصی و منشی حرفه‌ای کاربر هستی. اسمت «دستیار» است.
 
