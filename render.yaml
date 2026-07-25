@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: telegram-assistant
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: WEBHOOK_URL
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: GEMINI_MODEL
+        value: ""
+      - key: ZARINPAL_MERCHANT_ID
+        sync: false
+      - key: ZARINPAL_SANDBOX
+        value: "true"
+      - key: SUBSCRIPTION_PRICE_TOMAN
+        value: "49000"
+      - key: TRIAL_DAYS
+        value: "3"
+      - key: SUBSCRIPTION_DAYS
+        value: "30"
